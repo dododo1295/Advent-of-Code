@@ -9,6 +9,8 @@ fs.readFile("./input/day2.txt", "utf-8", (err, data) => {
     .map((x) => x.split(" ").map(Number));
   // This one required too much external help, my loops kept getting stuck... I see how this one works though
   // Now I get it.
+  //
+  // but this code is ugly as hell
   console.log(
     lines.filter((x) => {
       let biggestChange;
