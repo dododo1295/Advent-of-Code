@@ -1,0 +1,11 @@
+{
+  "name": "day2.js",
+  "version": "0.0.1",
+  "description": "AOC2024",
+  "main": "day2.js",
+  "scripts": {
+    "test": "asdf"
+  },
+  "author": "",
+  "license": "ISC"
+}
