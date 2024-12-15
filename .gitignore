@@ -1,2 +1,5 @@
 .DS_store
 package.json
+deno.json
+main.ts
+main_test.ts
