@@ -1,4 +1,4 @@
-const fs = require("fs");
+import fs from "node:fs";
 
 fs.readFile("./input/day6.txt", "utf-8", (err, data) => {
   const isInfLoop = (grid, startX, startY, startDir) => {
