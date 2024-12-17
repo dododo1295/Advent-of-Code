@@ -1,6 +1,6 @@
-const fs = require("fs");
+import fs from "node:fs";
 
-fs.readFile("./input/day6.txt", "utf-8", (err, data) => {
+fs.readFile("./input/day6.txt", "utf-8", (_err, data) => {
   const getStartPos = () => {
     for (let i = 0; i < grid.length; i++) {
       for (let j = 0; j < grid[0].length; j++) {

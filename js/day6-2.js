@@ -1,6 +1,6 @@
 import fs from "node:fs";
 
-fs.readFile("./input/day6.txt", "utf-8", (err, data) => {
+fs.readFile("./input/day6.txt", "utf-8", (_err, data) => {
   const isInfLoop = (grid, startX, startY, startDir) => {
     const dirs = [
       { dx: -1, dy: 0 }, // Up
