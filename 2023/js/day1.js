@@ -31,4 +31,4 @@ for (let i = 0; i < map.length; i++) {
   }
 }
 
-console.log(step);
+console.log("step that Santa first goes into the basement is step: ", step);
