@@ -33,8 +33,9 @@ fs.readFile("./input/day8.txt", "utf-8", (_err, data) => {
         newPoint.x < 0 ||
         newPoint.x >= antSize ||
         newPoint.y >= antSize
-      )
+      ) {
         return;
+      }
 
       antiBuggy.add(`${newPoint.x}|${newPoint.y}`);
     });
@@ -78,8 +79,9 @@ fs.readFile("./input/day8.txt", "utf-8", (_err, data) => {
           newPoint.x < 0 ||
           newPoint.x >= antSize ||
           newPoint.y >= antSize
-        )
+        ) {
           return;
+        }
         antiBuggyTwo.add(`${newPoint.x}|${newPoint.y}`);
       }
     });

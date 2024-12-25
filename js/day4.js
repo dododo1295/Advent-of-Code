@@ -1,4 +1,4 @@
-const fs = require("fs");
+import * as fs from "npm:fs";
 const path = require("path");
 
 const input = fs.readFileSync(
@@ -23,53 +23,61 @@ for (let y = 0; y < stuff.length; y++) {
         stuff[y - 1][x - 1] == "M" &&
         stuff[y - 2][x - 2] == "A" &&
         stuff[y - 3][x - 3] == "S"
-      )
+      ) {
         xmas++;
+      }
       if (
         stuff[y - 1][x] == "M" &&
         stuff[y - 2][x] == "A" &&
         stuff[y - 3][x] == "S"
-      )
+      ) {
         xmas++;
+      }
       if (
         stuff[y - 1][x + 1] == "M" &&
         stuff[y - 2][x + 2] == "A" &&
         stuff[y - 3][x + 3] == "S"
-      )
+      ) {
         xmas++;
+      }
     }
     if (
       stuff[y][x - 1] == "M" &&
       stuff[y][x - 2] == "A" &&
       stuff[y][x - 3] == "S"
-    )
+    ) {
       xmas++;
+    }
     if (
       stuff[y][x + 1] == "M" &&
       stuff[y][x + 2] == "A" &&
       stuff[y][x + 3] == "S"
-    )
+    ) {
       xmas++;
+    }
 
     if (y < stuff.length - 3) {
       if (
         stuff[y + 1][x - 1] == "M" &&
         stuff[y + 2][x - 2] == "A" &&
         stuff[y + 3][x - 3] == "S"
-      )
+      ) {
         xmas++;
+      }
       if (
         stuff[y + 1][x] == "M" &&
         stuff[y + 2][x] == "A" &&
         stuff[y + 3][x] == "S"
-      )
+      ) {
         xmas++;
+      }
       if (
         stuff[y + 1][x + 1] == "M" &&
         stuff[y + 2][x + 2] == "A" &&
         stuff[y + 3][x + 3] == "S"
-      )
+      ) {
         xmas++;
+      }
     }
   }
 }
