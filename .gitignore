@@ -1,6 +1,6 @@
 .DS_store
 package.json
-deno.json
 deno.lock
+deno.json
 main.ts
 main_test.ts
